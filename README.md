@@ -2,6 +2,11 @@
 
 Unofficial serving recipe for NVIDIA's [24GB IQ2 checkpoint](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB) on one DGX Spark (GB10, 128 GB unified memory). **The model and draft weights are not in this repository.** The quick start uses the fastest *measured* profile, LiLiCorr via vLLM's DFlash method; `no-draft` is the measured control. Nothing here starts, stops, or configures `rexl3-manager`.
 
+## Hugging Face models
+
+- **Target:** [NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB) ([exact measured revision](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB/tree/a326822af111290f2af5ac59ef4b5040347dabc4)).
+- **Optional draft:** [NVIDIA Nemotron 3.5 Bolt LiLiCorr](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr). The speed comparisons below use these separate target/draft checkpoints.
+
 ## Measured configurations
 
 - Target: `nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB`, revision `a326822af111290f2af5ac59ef4b5040347dabc4`; 118 verified files, 24,120,362,058 bytes on disk. Mixed ModelOpt IQ2 (`IQ2_XXS` with selected Q8_0/NVFP4/unquantized tensors), **not an NVFP4-only target**.
