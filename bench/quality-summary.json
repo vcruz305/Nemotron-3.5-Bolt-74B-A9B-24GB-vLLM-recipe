@@ -1,0 +1,50 @@
+{
+  "model": "nemotron-bolt",
+  "n": {
+    "knowledge": 20,
+    "math": 20,
+    "truth": 20,
+    "instruct": 20,
+    "code": 20,
+    "tools": 20
+  },
+  "expected_n": {
+    "knowledge": 20,
+    "math": 20,
+    "truth": 20,
+    "instruct": 20,
+    "code": 20,
+    "tools": 20
+  },
+  "complete": true,
+  "timed_out": false,
+  "overall": {
+    "policy": "strict",
+    "score": 77.5
+  },
+  "overall_flags": [
+    "truncated:instruct",
+    "trunc-in-think:instruct",
+    "truncated:code",
+    "trunc-in-think:code",
+    "loop-failures:knowledge",
+    "loop-failures:truth",
+    "loop-failures:instruct",
+    "loop-failures:code"
+  ],
+  "benchmark_fingerprint": "ec8ba0eaee88fa0a3e75739d6fd61e903a416644721cd41a3c1b7e6a65fecb4d",
+  "selection_fingerprint": "05c04833fcdb",
+  "policy_fingerprint": "b58cb90e8f47",
+  "parser": "v5",
+  "code_execution": "host-guarded",
+  "categories": {
+    "knowledge": 60.0,
+    "math": 100.0,
+    "truth": 80.0,
+    "instruct": 50.0,
+    "code": 85.0,
+    "tools": 90.0
+  },
+  "scope": "Historical Bolt no-draft serve only; LiLiCorr/DFlash quality not measured.",
+  "source_basename": "spark-vllm-nemotron-bolt-iq2-c8-20261015T102525-0700.json"
+}
